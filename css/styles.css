@@ -1,0 +1,171 @@
+@font-face {
+    font-family: heading-font;
+    src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+@font-face {
+    font-family: p-font;
+    src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+body
+{
+    background: hsl(30, 54%, 90%);
+}
+.inner-body
+{
+    background: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    width: 50%;
+    margin: 100px auto;
+    padding: 30px 30px;
+}
+.main-image
+{
+    width: 100%;
+    border-radius: 15px;
+}
+.main-heading
+{
+    font-family: heading-font;
+    padding: 30px 0px;
+    font-size: 35px;
+}
+p
+{
+    color: hsl(30, 10%, 34%);
+    font-size: 16px;
+    font-family: p-font;
+}
+.prep-time
+{
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 15px;
+    margin: 25px 0;
+    padding: 25px;
+    height: 183px;
+}
+.prep-heading
+{
+    color: hsl(332, 51%, 32%);
+}
+.prep-ul li
+{
+    color: hsl(30, 10%, 34%);
+    padding: 4px;
+}
+.ingredients
+{
+    font-family: heading-font;
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 17px;
+}
+.line
+{
+    content: "";
+    background: hsl(0, 0%, 93%);
+    display: block;
+    width: 570px;
+    height: 2px;
+    margin: 30px auto;
+
+}
+.ingredients-ul ul li::marker
+{
+    list-style-type: disc;
+    color: hsl(14, 45%, 36%);
+}
+.ingredients-ul li
+{
+    color: hsl(30, 10%, 34%);
+    padding: 4px;
+}
+
+ol {
+    
+    counter-reset: item; /* Initialize the counter */
+    list-style: none; /* Remove the default list style */
+    padding-left: 40px; /* Add left padding to the list */
+}
+ol li {
+    
+    counter-increment: item; /* Increment the counter */
+    position: relative; /* For absolute positioning of the counter */
+}
+
+ol li::before {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+    content: counter(item) ". "; /* Add the counter with a period and a space */
+    position: absolute; /* Position the counter */
+    left: -2em; /* Adjust the position */
+}
+
+
+
+.instructions
+{
+    font-family: heading-font;
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 22px;
+}
+.nutrition
+{
+    font-family: heading-font;
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 22px;
+}
+.values
+{
+    color: hsl(14, 45%, 36%);
+}
+.nutrition-items
+{
+    color: hsl(30, 10%, 34%);
+    margin-left: 25px;
+}
+.line2
+{
+    content: "";
+    background: hsl(0, 0%, 93%);
+    display: block;
+    width: 570px;
+    height: 2px;
+    margin: 15px auto;
+
+}
+.line3
+{
+    content: "";
+    background: hsl(0, 0%, 93%);
+    display: block;
+    width: 500px;
+    height: 2px;
+    margin: 30px auto;
+
+}
+@media screen and (max-width: 950px) {
+    .helper
+    {
+        display: block;
+        margin-bottom: 60%;
+    }
+    .inner-body
+    {
+        background: url(../assets/images/image-omelette.jpeg) no-repeat;
+        background-size: contain;
+        border-radius: 0px;
+        width: 100%;
+        margin: 0px auto 0px auto;
+        padding:  0 70px 70px 70px;
+        /* background-color: hsl(0, 47%, 40%); */
+        background-color: hsl(0, 0%, 100%);
+    }
+    .main-image
+    {
+        display: none;
+        /* transform: scale(100%); */
+        /* margin-bottom: 9%; */
+        /* width: 100%; */
+        /* border-radius: 0px; */
+        /* margin: auto; */
+    }
+}
